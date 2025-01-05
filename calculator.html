@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+<body>
+    
+    
+        <div class="calculator">
+    
+            <div class="display-screen">
+                <h3 id="result">0</h5>
+               </div>
+                   <table border="1">
+                   
+                  <tr>
+                
+                  <td>  <button class="btn-operator" id="clear" onclick="toclear()">Clear</button></td>
+                  <td> <button class="btn-operator" id="back" onclick="toback()">Back</button></td> 
+                  <td> <button class="btn-operator" id="pos" onclick="todisplay(event)">+</button></td> 
+                  <td> <button class="btn-operator" id="pos" onclick="todisplay(event)"style="font-size:30px;">.</button></td> 
+                </tr>
+                
+                   <tr>
+                    <td> <button class="btn-number" id="7" style="font-size:25px;" onclick="todisplay(event)">7</button></td>
+                        <td> <button class="btn-number" id="8" style="font-size:25px;margin-left:20px;" onclick="todisplay(event)">8</button></td>
+                            <td> <button class="btn-number" id="9" style="font-size:25px;margin-left:25px;" onclick="todisplay(event)">9</button></td>
+                                <td><button class="btn-operator" id="-" style="font-size:25px; margin-left:70px" onclick="todisplay(event)">-</button></td>
+                </tr>
+
+               
+                   <tr>
+                    <td> <button class="btn-number" id="4" style="font-size:25px;"onclick="todisplay(event)" >4</button></td>
+                        <td> <button class="btn-number" id="5" style="font-size:25px;margin-left:20px;" onclick="todisplay(event)">5</button></td>
+                            <td> <button class="btn-number" id="6"style="font-size:25px; margin-left:25px;" onclick="todisplay(event)">6</button></td>
+                                <td><button class="btn-operator" id="*" style="font-size:25px; margin-left:70px;" onclick="todisplay(event)">*</button></td>
+                </tr>
+                
+                    <tr>
+                        <td> <button class="btn-number" id="1"style="font-size:25px;" onclick="todisplay(event)">1</button></td>
+                            <td> <button class="btn-number" id="2" style="font-size:25px;margin-left:20px;" onclick="todisplay(event)">2</button></td>
+                                <td> <button class="btn-number" id="3" style="font-size:25px; margin-left:25px;" onclick="todisplay(event)">3</button></td>
+                                    <td> <button class="btn-operator" id="/" style="font-size:25px; margin-left:70px;" onclick="todisplay(event)">/</button></td>
+                </tr>
+             
+                   <tr>
+                    <td> <button class="btn-operator" id="bracketopen" style="font-size:25px;" onclick="todisplay(event)">(</button></td>
+                        <td>  <button class="btn-number" id="0" style="font-size:25px;margin-left:20px;" onclick="todisplay(event)">0</button></td>
+                            <td> <button class="btn-operator" id="bracketclosed" style="font-size:25px; margin-left:28px;" onclick="todisplay(event)">)</button></td>
+                                <td> <button class="btn-operator" id="equal" style="font-size:25px; margin-left:75px;" onclick="toequal()">=</button></td>
+                
+                </tr>
+         
+                </table>
+
+              </div>
+      
+
+
+      <script src="calculator.js"></script>
+    
+</body>
+</html>
